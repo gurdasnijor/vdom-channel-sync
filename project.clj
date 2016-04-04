@@ -6,9 +6,15 @@
 
   :min-lein-version "2.6.1"
 
+  :main virtual-dom-cljs.server.core
+
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.7.228"]
                  [org.clojure/core.match  "0.3.0-alpha4"]
+                 [compojure "1.5.0"]
+                 [http-kit "2.1.18"]
+                 [javax.servlet/servlet-api "2.5"]
+                 [com.cognitect/transit-cljs "0.8.237"]
                  [org.clojure/core.async "0.2.374"
                   :exclusions [org.clojure/tools.reader]]
                  [vdom "0.1.1-SNAPSHOT"]]
