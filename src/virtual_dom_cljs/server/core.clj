@@ -22,9 +22,9 @@
 
 (defn handle-websocket [request]
   (server/with-channel request channel
-                (connect! channel)
-                (server/on-close channel (partial disconnect! channel))
-                (server/on-receive channel #(notify-clients %))))
+    (connect! channel)
+    (server/on-close channel (partial disconnect! channel))
+    (server/on-receive channel #(notify-clients %))))
 
 
 (defroutes routes

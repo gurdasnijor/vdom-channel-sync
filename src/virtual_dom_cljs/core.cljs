@@ -40,6 +40,15 @@
    (throw (js/Error. "Websocket connection failed!"))))
 
 
+   ;  (defn make-websocket-rec-chan [url]
+   ;     (let [out (chan)
+   ;           wschan (js/WebSocket. url)]
+   ;       (set! (.-onmessage wschan) #(put! out (->> % .-data (t/read json-reader))))
+   ;       out))
+
+
+
+
 (def dispatch #(send-transit-msg! %))
 
 ; (defn get-messages! [data]
