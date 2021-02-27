@@ -33,6 +33,7 @@ And open your browser in `resources/public/index.html`. You will not
 get live reloading, nor a REPL.
 
 ## License
+Test
 
 Copyright © 2014 FIXME
 
